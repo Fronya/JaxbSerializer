@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.fronya.com/Products"
+        xmlns:xs="http://www.fronya.com/Products">
+    <element name="products">
+        <complexType>
+            <sequence>
+                <element name="product" type="xs:Product" minOccurs="1"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Product">
+        <all>
+            <element name="name" type="string"/>
+            <element name="price" type="integer"/>
+            <element name="amount" type="integer"/>
+            <element name="description" type="string"/>
+            <element name="productType" type="xs:ProductType"/>
+        </all>
+    </complexType>
+
+    <simpleType name="ProductType">
+        <restriction base="string">
+            <enumeration value="convenience"/>
+            <enumeration value="shopping"/>
+            <enumeration value="speciality"/>
+            <enumeration value="unsought"/>
+        </restriction>
+    </simpleType>
+</schema>

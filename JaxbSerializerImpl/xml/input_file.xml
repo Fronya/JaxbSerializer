@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<xs:products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.fronya.com/Products">
+	<product>
+		<name>Book</name>
+		<price>100</price>
+		<amount>15</amount>
+		<description>Intresting book</description>
+		<productType>convenience</productType>
+	</product>
+	<product>
+		<name>Apple</name>
+		<price>5</price>
+		<amount>300</amount>
+		<description>Red apple</description>
+		<productType>shopping</productType>
+	</product>
+	<product>
+		<name>Computer</name>
+		<price>5000</price>
+		<amount>30</amount>
+		<description>New computer</description>
+		<productType>speciality</productType>
+	</product>
+</xs:products>
